@@ -32,6 +32,26 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'angular-ui-router-rails'
+
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
+
+gem 'angularjs-rails'
+gem 'bower-rails'
+gem 'angular-rails-templates'
+
+gem 'rack-cors', :require => 'rack/cors'
+
+gem 'rails_12factor', group: :production
+
+
+source "https://rails-assets.org" do
+  gem 'rails-assets-bootstrap'
+  gem 'rails-assets-angular'
+  gem 'rails-assets-leaflet'
+end
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
