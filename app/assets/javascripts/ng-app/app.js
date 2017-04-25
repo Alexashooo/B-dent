@@ -17,7 +17,6 @@
     }
 
     angular
-        .module('bDent', ['ui.router', 'templates'])
+        .module('bDent', ['ui.router', 'templates', 'ngMap'])
         .config(config);
-
 })()

@@ -76,17 +76,43 @@
     border: 2px solid orange;
 }
 
+
 .content-container {
+  position: relative;
   width: 100%;
-  height: 60vh;
-  border: 1px solid grey;
+  height: 60%;
+  border: 2px solid red;
   background-color: #F4A460;
-  margin-top: 15vh;
+  margin-top: 20%;
   text-align: center;
+}
+
+.content-container .google-map-placeholder{
+   width: 40%;
+   height: 80%;
+   border: 1px solid green;
+   left:5%;
+   top:10%;
+   position: relative;
+   float:left;
+}
+
+.map {
 
 }
 
+.content-container .contact-text {
+  width: 40%;
+  height: 80%;
+  border: 1px solid red;
+  right:5%;
+  top:10%;
+  position: relative;
+  float:right;
+}
+
 .images {
+   position: relative;
    width: 100%;
    height:auto;
 }

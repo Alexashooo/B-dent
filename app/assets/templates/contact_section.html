@@ -1,0 +1,14 @@
+<section class = 'contact'>
+    <div class = 'content-container'>
+      <div class = 'google-map-placeholder' >
+        <ng-map zoom="11" center="[40.74, -74.18]">
+            <marker position="[40.74, -74.18]" />
+            <shape name="circle" radius="400" center="[40.74,-74.18]" radius="4000" />
+            <control name="overviewMap" opened="true" />
+        </ng-map>` 
+      </div>
+       <div class = 'contact-text'>
+          <img class = 'images' ng-src= '{{imagesContact.contactText}}' alt="contact-text">
+       </div>
+    </div>
+</section>

@@ -37,13 +37,15 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'npm-rails'
+
 gem 'angular-ui-router-rails'
 
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 
 gem 'angularjs-rails'
-gem 'bower-rails'
+ gem "bower-rails", "~> 0.11.0"
 gem 'angular-rails-templates'
 
 gem 'rack-cors', :require => 'rack/cors'
