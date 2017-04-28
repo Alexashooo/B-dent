@@ -16,10 +16,6 @@
       };
 
 
-
-
-
-
   angular
       .module('bDent')
       .directive('navigationBar', ['ImageSharing', navigationBar]);

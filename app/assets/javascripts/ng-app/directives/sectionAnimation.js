@@ -39,14 +39,14 @@
                      if(el.visible(true) && el.attr('id')!= 'section1'){
                         el.addClass("come-in");
 
-                     } if(!el.visible(true) && el.attr('id')!= 'section1'){
+                     } else if(!el.visible(true)){
                        el.removeClass("come-out");
                      }
                } else if(scrolling === 'down'){
                      var el = $(element);
                      if(el.visible(true) && el.attr('id')!= 'section4'){
                         el.addClass("come-out");
-                     } if(!el.visible(true) && el.attr('id')!= 'section4'){
+                     } else if(!el.visible(true)){
                        el.removeClass("come-in");
                      }
                 }
@@ -66,13 +66,16 @@
               };
 
               $(window).scrollEnd(function(){
-                    var el = $(element);
-                    if(!el.visible(true)){
-                       el.removeClass("come-in come-out");
+                $('.section-container').each(function(){
+                    //var el = $(element);
+                    var $this = $(this);
+                    if(!$this.visible(true)){
+                       $this.removeClass("come-in come-out");
                     }
-              }, 350);
+                 })
+              }, 1000);
 
-          }
+             }
 
         }
       };
