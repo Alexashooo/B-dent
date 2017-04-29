@@ -1,12 +1,4 @@
 
-.body-container{
-  width: 90vw;
-  /* border: 1px solid grey; */
-}
-
-.main-container {
-    width: 100%;
-}
 
 .navbar {
    width:100%;
@@ -110,13 +102,13 @@
 
 
 .map {
-   height:100%;
-
+   width:100%;
+   height: 100%;
 }
 
 .images {
-  height:100%;
-
+  width:100%;
+  height: auto;
 }
 
 .active-section {
@@ -180,8 +172,8 @@
 
 
   .images {
-    height:100%;
-
+      width:100%;
+      height:auto;
   }
 
   .content-container{
