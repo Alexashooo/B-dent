@@ -1,5 +1,11 @@
 (function(){
-    function config($stateProvider, $locationProvider){
+    function config($stateProvider, $locationProvider, $urlRouterProvider){
+
+        $locationProvider.html5Mode(false);
+        $locationProvider.hashPrefix('!');
+        $urlRouterProvider.otherwise('/');
+
+
         $stateProvider
             .state('landing', {
                 url:'/',
@@ -7,11 +13,11 @@
                 templateUrl: 'landing.html'
             });
 
-        $locationProvider
-             .html5Mode({
-                enabled: true,
-                requireBase: false
-              });
+      //  $locationProvider
+        //     .html5Mode({
+          //      enabled: true,
+                //requireBase: false
+            //  });
 
 
     }

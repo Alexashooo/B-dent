@@ -1,5 +1,5 @@
 (function(){
-      function centerImage(){
+      function centerHorizontally(){
 
         return {
           restrict: 'A',
@@ -25,5 +25,5 @@
 
   angular
       .module('bDent')
-      .directive('centerImage', centerImage);
+      .directive('centerHorizontally', centerHorizontally);
 })();

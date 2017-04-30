@@ -6,7 +6,7 @@
           link: function(scope, element, attrs){
 
               var keepRatio = function(){
-                  element.css('width', element.height());
+                  element.css('height', element.width());
 
               };
 
