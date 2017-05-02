@@ -6,10 +6,7 @@
           link: function(scope, element, attrs){
 
               var centerHorizontally = function(){
-
                   element.css('margin-top', (element.parent().height()-element.height())/2);
-                  console.log(element.css('margin-top'));
-
               };
 
                $(document).ready(function(){
