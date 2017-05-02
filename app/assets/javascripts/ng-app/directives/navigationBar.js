@@ -10,7 +10,7 @@
 
           scope.imagesNavigation = ImageSharing.navigation;
           // height/width ratio
-          scope.buttonRatio = 0.4;
+          scope.buttonRatio = 0.35;
           }
 
         }
