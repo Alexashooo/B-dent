@@ -1,26 +1,27 @@
 (function(){
-      function centerHorizontally(){
+      function centerHorizontally($document, $window){
 
         return {
           restrict: 'A',
           link: function(scope, element, attrs){
 
               var centerHorizontally = function(){
-                  element.css('margin-top', (element.parent().height()-element.height())/2);
-              };
+                 element.css('margin-top', (element.parent().height()-element.height())/2);
+              }
 
-               $(document).ready(function(){
-                   centerHorizontally();
-               });
+              element.bind('load', function(){
+                     centerHorizontally();      
+              });
 
-               $(window).resize(function(){
-                   centerHorizontally();
-               });
+              angular.element($window).resize(function(){
+                  centerHorizontally();
+              });
+
           }
         }
       }
 
   angular
       .module('bDent')
-      .directive('centerHorizontally', centerHorizontally);
+      .directive('centerHorizontally', ['$document', '$window', centerHorizontally]);
 })();

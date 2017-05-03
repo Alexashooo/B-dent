@@ -98,23 +98,19 @@
 
 
 
-
 .nav-button .button-text-container {
    float:right;
-   display:flex;
-   right:0;
-  /* border: 1px solid orange;  */
-   margin:0;
-   padding:0;
-   height:100%;
+   text-align: center;
+  /* border: 1px solid orange; */
    width:calc(20px + 2.6vw);
    font-family: Nunito;
    font-style: normal;
    font-size:calc(8px + 0.3vw);
    font-weight: 800;
    color: #F0E7E2;
-   justify-content: center;
-   align-items: center;
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
 }
 
 
