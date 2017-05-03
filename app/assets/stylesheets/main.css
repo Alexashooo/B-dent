@@ -63,6 +63,7 @@
    margin-right:calc(5px + 0.6vw);
    color: #F0E7E2;
    font-size:12px;
+   cursor: pointer;
 }
 
 .sections-bar{
@@ -78,6 +79,7 @@
    border-radius: 6px;
    margin-left: 0.5vw;
    margin-right:0.5vw;
+   cursor: pointer;
 
 }
 
@@ -143,7 +145,6 @@
      float:left;
 }
 
-
 .content-container .contact-text {
       height: 64vh;
       width:50%;
@@ -166,8 +167,30 @@
   right: 10%;
   width:auto;
   height: 18vh;
+  cursor: pointer;
 
 }
+
+.service-description{
+  position:absolute;
+  z-index: 1;
+  top:120vh;
+
+}
+
+.service-description .description-text{
+      background: white;
+      border: 3px solid black;
+      border-radius: 6px;
+      padding: 1em;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 500px;
+      position: relative;
+      top: 30px;
+      transition: top 0.45s ease;
+}
+
 
 .map {
    width:100%;
@@ -223,7 +246,7 @@
 }
 
 
-@media screen and (max-width:959px){
+@media screen and (max-width:1280px){
 
   .content-container .google-map-placeholder{
         float:none;

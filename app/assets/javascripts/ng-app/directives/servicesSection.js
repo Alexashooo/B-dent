@@ -1,8 +1,6 @@
 (function(){
       function servicesSection(ImageSharing){
 
-
-
         return {
           templateUrl: 'services_section.html',
           replace: true,
@@ -17,10 +15,6 @@
 
         }
       };
-
-
-
-
 
 
   angular
