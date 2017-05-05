@@ -16,7 +16,10 @@
             .state('landing.serviceDescription', {
                 url:'service_description',
                 templateUrl: 'service_description.html',
-                controller: 'ServiceDescriptionCtrl as serviceDescription'
+                controller: 'ServiceDescriptionCtrl as serviceDescription',
+                params: {
+                   descriptionId: null
+                }
             });
 
       // $locationProvider

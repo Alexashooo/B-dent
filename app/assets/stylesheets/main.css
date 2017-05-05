@@ -172,23 +172,33 @@
 }
 
 .service-description{
-  position:absolute;
-  z-index: 1;
-  top:120vh;
+  position:fixed;
 
+  left: 25vw;
+  right: 25vw;
+  width: 50vw;
+  height:50vh;
+  top: 25vh;
+  transition: top 0.45s ease;
+  overflow-y: auto;
 }
 
 .service-description .description-text{
-      background: white;
-      border: 3px solid black;
-      border-radius: 6px;
-      padding: 1em;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 500px;
-      position: relative;
-      top: 30px;
-      transition: top 0.45s ease;
+  width:80%%;
+  height:80%;
+  margin-top:10%;
+  margin-left:10%;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  background: #3CB371;
+  color:#F0E7E2;
+  font-size: 14px;
+  position: relative;
+}
+
+.service-description .description-text .hide-text{
+    display:none;
 }
 
 

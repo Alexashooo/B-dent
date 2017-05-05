@@ -3,14 +3,14 @@
     <div class = 'content-container'>
         <table class="service-table" center-horizontally>
              <tr>
-               <td><img class = 'service-images' ng-src = '{{imagesServices.decijaPreventiva}}' ui-sref='.serviceDescription'></td>
-               <td><img class = 'service-images' ng-src = '{{imagesServices.estetskaHirurgija}}'></td>
+               <td><img class = 'service-images' ng-src = '{{imagesServices.decijaPreventiva}}' ui-sref=".serviceDescription({descriptionId:'children'})"></td>
+               <td><img class = 'service-images' ng-src = '{{imagesServices.estetskaHirurgija}}' ui-sref=".serviceDescription({descriptionId:'estheticH'})"></td>
                <td><img class = 'service-images' ng-src = '{{imagesServices.implantologija}}'></td>
                <td><img class = 'service-images' ng-src = '{{imagesServices.izbeljivanjeZuba}}'></td>
                <td><img class = 'service-images' ng-src = '{{imagesServices.konzervativa}}'></td>
              </tr>
              <tr>
-               <td><img class = 'service-images' ng-src = '{{imagesServices.oralnaHirurgija}}'></td>
+               <td><img class = 'service-images' ng-src = '{{imagesServices.oralnaHirurgija}}'  ui-sref=".serviceDescription({descriptionId:'oralH'})"></td>
                <td><img class = 'service-images' ng-src = '{{imagesServices.ortopedija}}'></td>
                <td><img class = 'service-images' ng-src = '{{imagesServices.paradontologija}}'></td>
                <td><img class = 'service-images' ng-src = '{{imagesServices.protetika}}'></td>
