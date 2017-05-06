@@ -1,8 +1,12 @@
 (function(){
-   function ServiceDescriptionCtrl($scope, $state, $stateParams){
+   function ServiceDescriptionCtrl($scope, $state, $stateParams, $rootScope){
 
          $scope.descriptionId = $stateParams.descriptionId;
 
+
+         $rootScope.$on('$stateChangeStart', function(event, toState, fromState) {
+
+         });
 
          $scope.$watch(function(){
                         return $('.description-text').attr('descriptionToShow');
@@ -21,6 +25,8 @@
          );
 
 
+         
+
          $scope.goToLanding = function(){
              $state.go('landing');
          }
@@ -28,5 +34,5 @@
 
    angular
      .module('bDent')
-     .controller('ServiceDescriptionCtrl', ['$scope', '$state', '$stateParams', ServiceDescriptionCtrl]);
+     .controller('ServiceDescriptionCtrl', ['$scope', '$state', '$stateParams', '$rootScope',  ServiceDescriptionCtrl]);
 })();

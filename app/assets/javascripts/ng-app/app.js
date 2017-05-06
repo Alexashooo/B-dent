@@ -17,16 +17,30 @@
                 url:'service_description',
                 templateUrl: 'service_description.html',
                 controller: 'ServiceDescriptionCtrl as serviceDescription',
+                resolve: {
+                   preventLoadIf: preventLoadIf
+                },
                 params: {
                    descriptionId: null
                 }
             });
 
+
+            function preventLoadIf($q, $stateParams) {
+                  if($stateParams.descriptionId!=null){
+                     return $q.when()
+                  } else {
+                    return $q.reject()
+                  }
+             };
+
+
+
       // $locationProvider
         //    .html5Mode({
           //  enabled: true,
             //    requireBase: false
-            // });
+             //});
 
 
     }
