@@ -173,7 +173,6 @@
 
 .service-description{
   position:fixed;
-
   left: 25vw;
   right: 25vw;
   width: 50vw;
@@ -181,24 +180,36 @@
   top: 25vh;
   transition: top 0.45s ease;
   overflow-y: auto;
+  animation: fadein 1.2s;
+  z-index: -50;
+
 }
 
+
 .service-description .description-text{
-  width:80%%;
-  height:80%;
-  margin-top:10%;
-  margin-left:10%;
-  font-family: Nunito;
-  font-style: normal;
-  font-weight: 800;
-  background: #3CB371;
-  color:#F0E7E2;
-  font-size: 14px;
-  position: relative;
+      width:80%%;
+      height:80%;
+      margin-top:10%;
+      margin-left:10%;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: 800;
+      background: #3CB371;
+      color:#F0E7E2;
+      font-size: 14px;
+      position: relative;
+
 }
 
 .service-description .description-text .hide-text{
-    display:none;
+      display: none;
+}
+
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 
