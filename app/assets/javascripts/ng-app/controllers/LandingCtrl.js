@@ -7,10 +7,8 @@
 
       window.onbeforeunload = function () {
           window.scrollTo(0, 0);
-          window.setTimeout(function () { window.location = '/'; }, 0); 
+          window.setTimeout(function () { window.location = '/'; }, 0);
           window.onbeforeunload = null;
-
-
       };
 
 
