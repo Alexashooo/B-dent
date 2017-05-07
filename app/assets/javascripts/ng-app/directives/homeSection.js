@@ -8,7 +8,7 @@
           scope: {},
           link: function(scope, element, attrs){
 
-          scope.imagesHome = ImageSharing.home;
+          scope.imagesHome = ImageSharing.home.desk;
 
           }
 

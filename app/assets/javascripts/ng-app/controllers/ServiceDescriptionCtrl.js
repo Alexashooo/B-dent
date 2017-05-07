@@ -4,9 +4,7 @@
          $scope.descriptionId = $stateParams.descriptionId;
 
 
-         $rootScope.$on('$stateChangeStart', function(event, toState, fromState) {
-
-         });
+        
 
          $scope.$watch(function(){
                         return $('.description-text').attr('descriptionToShow');
@@ -25,7 +23,7 @@
          );
 
 
-         
+
 
          $scope.goToLanding = function(){
              $state.go('landing');

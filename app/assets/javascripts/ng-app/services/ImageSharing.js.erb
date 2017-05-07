@@ -3,39 +3,102 @@
        var ImageSharing = {};
 
         ImageSharing.navigation = {
-          logo: '<%=asset_path("navigation/logo.svg")%>',
-          about: '<%=asset_path("navigation/about.svg")%>',
-          contact: '<%=asset_path("navigation/contact.svg")%>',
-          pricing: '<%=asset_path("navigation/pricing.svg")%>',
-          services: '<%=asset_path("navigation/services.svg")%>',
-          btnTtextBgd: '<%=asset_path("navigation/button-text-background.svg")%>'
+          desk:{
+              logo: '<%=asset_path("navigation/desktop/logo.svg")%>',
+              about: '<%=asset_path("navigation/desktop/about.svg")%>',
+              contact: '<%=asset_path("navigation/desktop/contact.svg")%>',
+              pricing: '<%=asset_path("navigation/desktop/pricing.svg")%>',
+              services: '<%=asset_path("navigation/desktop/services.svg")%>'
+          },
+          mob:{
+              logo: '<%=asset_path("navigation/mobile/logo.svg")%>',
+              about: '<%=asset_path("navigation/mobile/about.svg")%>',
+              contact: '<%=asset_path("navigation/mobile/contact.svg")%>',
+              pricing: '<%=asset_path("navigation/mobile/pricing.svg")%>',
+              services: '<%=asset_path("navigation/mobile/services.svg")%>'
+          }
         };
 
         ImageSharing.home = {
-          main: '<%=asset_path("home/homepage.jpg")%>'
+           desk:{
+              main: '<%=asset_path("home/desktop/homepage.jpg")%>'
+           },
+           mob:{
+
+           }
         };
 
         ImageSharing.services = {
-          decijaPreventiva: '<%=asset_path("services/decija-preventiva.png")%>',
-          estetskaHirurgija: '<%=asset_path("services/estetska.png")%>',
-          implantologija: '<%=asset_path("services/implantologija.png")%>',
-          izbeljivanjeZuba: '<%=asset_path("services/izbeljivanje-zuba.png")%>',
-          konzervativa: '<%=asset_path("services/konzervativa.png")%>',
-          oralnaHirurgija: '<%=asset_path("services/oralna-hirurgija.png")%>',
-          ortopedija: '<%=asset_path("services/ortopedija.png")%>',
-          paradontologija: '<%=asset_path("services/paradontologija.png")%>',
-          protetika: '<%=asset_path("services/protetika.png")%>'
+           desk:{
+               decijaPreventiva: '<%=asset_path("services/desktop/decija-preventiva.png")%>',
+               estetskaHirurgija: '<%=asset_path("services/desktop/estetska.png")%>',
+               implantologija: '<%=asset_path("services/desktop/implantologija.png")%>',
+               izbeljivanjeZuba: '<%=asset_path("services/desktop/izbeljivanje-zuba.png")%>',
+               konzervativa: '<%=asset_path("services/desktop/konzervativa.png")%>',
+               oralnaHirurgija: '<%=asset_path("services/desktop/oralna-hirurgija.png")%>',
+               ortopedija: '<%=asset_path("services/desktop/ortopedija.png")%>',
+               paradontologija: '<%=asset_path("services/desktop/paradontologija.png")%>',
+               protetika: '<%=asset_path("services/desktop/protetika.png")%>'
+           },
+           mob:{
+
+           }
         };
 
-
          ImageSharing.about = {
-           about: '<%=asset_path("about/about.jpg")%>'
+            desk:{
+                about: '<%=asset_path("about/desktop/about.jpg")%>'
+            },
+            mob:{
+
+            }
+
          };
 
           ImageSharing.contact = {
-            contact: '<%=asset_path("contact/contact.jpg")%>',
-            contactText: '<%=asset_path("contact/contact-text.jpg")%>'
+            desk:{
+              contact: '<%=asset_path("contact/desktop/contact.jpg")%>',
+              contactText: '<%=asset_path("contact/desktop/contact-text.jpg")%>'
+            },
+            mob:{
+
+            }
           };
+
+
+          var checkDeviceWidthAndApply = function(scope, deviceWidth, scopeImages, serverImages){
+                if($(window).width() <= deviceWidth){
+                  scope.$apply(function(){
+                      scope[scopeImages] = ImageSharing[serverImages].mob;
+                  });
+                } else {
+                  scope.$apply(function(){
+                      scope[scopeImages] = ImageSharing[serverImages].desk;
+                  });
+                }
+          };
+
+
+          ImageSharing.toggleDeskMob =function(deviceWidth, scopeImages, serverImages){
+               var scope = this;
+               var scopeImages = scopeImages;
+               $(document).ready(function(){
+                   checkDeviceWidthAndApply(scope, deviceWidth, scopeImages, serverImages);
+               });
+
+               $(window).on("resize", function(){
+                   checkDeviceWidthAndApply(scope, deviceWidth, scopeImages, serverImages);
+               });
+
+               scope.$on("$destroy",function (){
+                   $(window).off("resize load");
+               });
+            };
+
+
+
+
+
 
        return ImageSharing;
 

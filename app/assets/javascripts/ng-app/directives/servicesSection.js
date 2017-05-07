@@ -9,7 +9,7 @@
 
           link: function(scope, element, attrs){
 
-          scope.imagesServices = ImageSharing.services;
+          scope.imagesServices = ImageSharing.services.desk;
 
           }
 

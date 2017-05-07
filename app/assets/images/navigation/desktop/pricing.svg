@@ -4,12 +4,12 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="60px" height="60px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve">
 <g>
-	<polygon fill="#46454A" stroke="#E1D2CF" stroke-width="0.3" stroke-miterlimit="10" points="10.89,32.309 24.644,39.088 
+	<polygon fill="#1E100B" stroke="#F3F2F2" stroke-width="0.3" stroke-miterlimit="10" points="10.89,32.309 24.644,39.088 
 		50.214,28.101 37.014,23.618 	"/>
-	<polygon fill="#46454A" stroke="#E1D2CF" stroke-width="0.3" stroke-miterlimit="10" points="10.139,30.359 24.644,37.332 
+	<polygon fill="#1E100B" stroke="#F3F2F2" stroke-width="0.3" stroke-miterlimit="10" points="10.139,30.359 24.644,37.332 
 		50.968,26.417 37.014,21.862 	"/>
-	<polygon fill="#46454A" stroke="#E1D2CF" stroke-width="0.3" stroke-miterlimit="10" points="9.614,28.688 24.644,35.701 
-		51.696,24.86 37.014,20.231 	"/>
-	<polygon fill="#F0E2E2" points="20.296,25.392 35.183,31.479 35.183,34.559 39.712,32.612 39.712,29.661 24.667,24.043 	"/>
+	<polygon fill="#1E100B" stroke="#F3F2F2" stroke-width="0.3" stroke-miterlimit="10" points="9.614,28.688 24.644,35.701 
+		51.695,24.86 37.014,20.231 	"/>
+	<polygon fill="#F3F2F2" points="20.296,25.392 35.184,31.479 35.184,34.559 39.712,32.612 39.712,29.661 24.667,24.043 	"/>
 </g>
 </svg>

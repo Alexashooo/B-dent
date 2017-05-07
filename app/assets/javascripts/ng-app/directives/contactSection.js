@@ -9,7 +9,7 @@
 
           link: function(scope, element, attrs){
 
-          scope.imagesContact = ImageSharing.contact;
+          scope.imagesContact = ImageSharing.contact.desk;
 
           }
 

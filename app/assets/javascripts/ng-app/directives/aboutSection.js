@@ -1,8 +1,6 @@
 (function(){
       function aboutSection(ImageSharing){
 
-
-
         return {
           templateUrl: 'about_section.html',
           replace: true,
@@ -11,9 +9,9 @@
 
           link: function(scope, element, attrs){
 
-          scope.imagesAbout = ImageSharing.about;
-          }
+          scope.imagesAbout = ImageSharing.about.desk;
 
+         }
         }
       };
 

@@ -9,7 +9,10 @@
           scope:{},
           link: function(scope, element, attrs){
 
-          scope.imagesNavigation = ImageSharing.navigation;
+          //toggle image source, depends on device with
+          ImageSharing.toggleDeskMob.call(scope, 960, 'imagesNavigation', 'navigation');
+
+
           // height/width ratio
           scope.buttonRatio = 0.35;
 
