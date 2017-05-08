@@ -2,8 +2,9 @@
   top:0;
   left:10%;
   width:80%;
+  min-width: 320px;
   height:10vh;
-  min-height: 70px;
+  min-height: 80px;
   position:fixed;
   margin-bottom: 5vh;
   z-index: 1;
@@ -12,6 +13,7 @@
 .main-container {
    left:10%;
    width: 80%;
+   min-width: 320px;
    top:10vh;
    position:relative;
 }
@@ -20,10 +22,11 @@
 .navbar {
    width:100%;
    height: 100%;
-   min-height: 70px;
-   border: 1px solid green;
+   min-height: 85px;
    background-color: #46454A;
    position: fixed;
+   padding: 0;
+   margin: 0;
    top:0;
 }
 
@@ -31,7 +34,7 @@
 .logo {
   display: inline-block;
   height:80%;
-  min-height: 40px;
+  min-height: 30px;
   width: auto;
   margin:1px;
   margin-left:calc(5px + 0.6vw);
@@ -42,9 +45,8 @@
   float:right;
   display:flex;
   height:100%;
-  min-height: 70px;
+  min-height: 60px;
   width: auto;
-  margin:1px;
   margin-right:calc(5px + 0.1vw);
   padding: 0;
   white-space: nowrap;
@@ -55,7 +57,6 @@
 .language-bar{
    text-align: right;
    padding: 0.5vh;
-   height:30%;
 }
 
 .language-button{
@@ -68,7 +69,6 @@
 .sections-bar{
   text-align: right;
   padding: 0.5vh;
-  height:70%;
 }
 
 .nav-button {
@@ -301,26 +301,50 @@
             width:100%;
             display:inline-block;
         }
+/* here starts mob navbar !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    /*    .header{
+          top:0;
+          left:10%;
+          width:80%;
+          height:70px;
+          position:fixed;
+          margin-bottom: 5vh;
+          z-index: 1;
+        }   */
+
+  /*      .navbar {
+           width:100%;
+           height: 100%;
+
+
+           position: fixed;
+           padding: 0;
+           margin: 0;
+           top:0;
+        }  */
+
+        .logo {
+          display: inline-block;
+          height:60px;
+          min-height: 30px;
+          width: auto;
+          margin-left:calc(5px + 0.6vw);
+          padding: 0;
+          position: relative;
+          margin-top:10px;
+        }
 
 
         .nav-sections {
-          float:right;
-          display:flex;
-          height:100%;
-          min-height: 70px;
-          width: auto;
-          margin:1px;
-          margin-right:calc(5px + 0.1vw);
-          padding: 0;
-          white-space: nowrap;
-          align-items: flex-end;
-          vertical-align: middle;
-        }
+            height:75px;
+         }
 
-        .language-bar{
+       .language-bar{
            text-align: right;
-           padding: 0.5vh;
-           height:30%;
+           height:21px;
+           top:0;
+           right:0;
+           position: absolute;
         }
 
         .language-button{
@@ -328,59 +352,57 @@
            color: #F0E7E2;
            font-size:12px;
            cursor: pointer;
+           height: 18px;
+           padding-bottom: 3px;
         }
 
-        .sections-bar{
+       .sections-bar{
           text-align: right;
-          padding: 0.5vh;
-          height:70%;
+          padding: 0;
+          right:0;
+          bottom:0;
+          height:54px;
+          position: absolute;
+
         }
+
 
         .nav-button {
            display: inline-block;
-           min-width: 40px;
-           min-height:50px;
-           width:5vw;
-           height:6vw;
-           border: 1px solid  #F0E7E2;
-           border-radius: 0px;
-           margin-left: 0.5vw;
+           width: 35px;
+           height:54px;
+           border: 0;
+           margin-left:calc(5px+0.1vw);
            margin-right:0.5vw;
            cursor: pointer;
-
         }
 
         .nav-button .button-image-container {
-           top:0;
            display:block;
            padding:0;
            margin:0;
-           height:60%;
-           width:100%;
-           position: relative;
+           height:35px;
+           width:35px;
+           bottom:0;
         }
 
         .nav-button .button-image-container .button-image{
-           width:100%;
-           min-width: 40px;
+           width:35px;
            height:auto;
-
+           padding: 0;
+           margin: 0;
         }
 
 
-
         .nav-button .button-text-container {
-            bottom:0;
             display:block;
             padding:0;
             margin:0;
-            height:30%;
-            width:100%;
-            position: relative;
+            height:12px;
+            width:40px;
             text-align: center;
             font-family: Nunito;
             font-style: normal;
-
             color: #F0E7E2;
         }
 
