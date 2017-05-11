@@ -261,14 +261,71 @@
      width:100%;
 }
 
+.content-container-services .service-table td{
+     height:32.8vh;
+     width:16vw;
+     border:1px red solid;
+     padding:0;
+     position:relative;
 
-.service-table td .service-images{
-  left: 10%;
-  right: 10%;
-  width:auto;
-  height: 18vh;
-  cursor: pointer;
+}
 
+.content-container-services .service-table td .service-box{
+    width:100%;
+    height:100%;
+    border:2px blue solid;
+    margin:auto;
+    top:0;
+    bottom:0;
+
+}
+
+.content-container-services .service-table td .service-box .text-box{
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    margin:auto;
+    display: block;
+    border:2px orange solid;
+    position:absolute;
+    z-index: 1000;
+    text-align: center;
+    cursor: pointer;
+}
+
+.content-container-services .service-table td .service-box .text-box tag{
+   position: absolute;
+   bottom: 0;
+   left:0;
+   right:0;
+   margin:auto;
+}
+
+.content-container-services .service-table td .service-box .service-images-higher{
+    width:100%;
+    height:auto;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    margin:auto;
+    cursor: pointer;
+    display: block;
+}
+
+.content-container-services .service-table td .service-box .service-images-wider{
+    width:auto;
+    height:100%;
+    position:absolute;
+    right:0;
+    left:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    cursor: pointer;
+    display:block;
 }
 
 .service-description{
@@ -450,16 +507,6 @@
             padding: 0;
         }
 
-  /*      .content-container-home .image-home{
-            width:auto;
-            height:100%;
-            position: absolute;
-            margin: auto;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-        }   */
 
 
         .content-container-services{

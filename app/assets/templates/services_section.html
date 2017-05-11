@@ -4,7 +4,25 @@
     <div class = 'content-container-services'>
         <table class="service-table" center-horizontally>
              <tr>
-               <td><img class = 'service-images' ng-src = '{{imagesServices.decijaPreventiva}}' ui-sref=".serviceDescription({descriptionId:'children'})"></td>
+                <td>
+                    <div class='service-box' ui-sref=".serviceDescription({descriptionId:'children'})">
+                          <div class="text-box">
+                              <tag>Decija preventiva</tag>
+                          </div>
+                          <img ng-src = '{{imagesServices.decijaPreventiva}}'>
+                    </div>
+                  </td>
+
+               <td>
+                    <div class='service-box' ui-sref=".serviceDescription({descriptionId:'estheticH'})">
+                          <div class="text-box">
+                              <tag>Decija preventiva</tag>
+                          </div>
+                          <img ng-src = '{{imagesServices.estetskaHirurgija}}'>
+                    </div>
+                </td>
+
+
                <td><img class = 'service-images' ng-src = '{{imagesServices.estetskaHirurgija}}' ui-sref=".serviceDescription({descriptionId:'estheticH'})"></td>
                <td><img class = 'service-images' ng-src = '{{imagesServices.implantologija}}'></td>
                <td><img class = 'service-images' ng-src = '{{imagesServices.izbeljivanjeZuba}}'></td>
