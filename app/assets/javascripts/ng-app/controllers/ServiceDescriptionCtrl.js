@@ -2,9 +2,7 @@
    function ServiceDescriptionCtrl($scope, $state, $stateParams, $rootScope){
 
          $scope.descriptionId = $stateParams.descriptionId;
-
-
-        
+      
 
          $scope.$watch(function(){
                         return $('.description-text').attr('descriptionToShow');

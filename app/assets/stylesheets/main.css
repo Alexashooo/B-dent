@@ -264,7 +264,6 @@
 .content-container-services .service-table td{
      height:32.8vh;
      width:16vw;
-     border:1px red solid;
      padding:0;
      position:relative;
 
@@ -273,7 +272,6 @@
 .content-container-services .service-table td .service-box{
     width:100%;
     height:100%;
-    border:2px blue solid;
     margin:auto;
     top:0;
     bottom:0;
@@ -287,7 +285,6 @@
     top:0;
     margin:auto;
     display: block;
-    border:2px orange solid;
     position:absolute;
     z-index: 1000;
     text-align: center;
@@ -303,11 +300,11 @@
 }
 
 .content-container-services .service-table td .service-box .service-images-higher{
-    width:100%;
+    width:90%;
     height:auto;
     position:absolute;
-    left:0;
-    right:0;
+    left:5%;
+    right:5%;
     bottom:0;
     top:0;
     margin:auto;
@@ -317,10 +314,10 @@
 
 .content-container-services .service-table td .service-box .service-images-wider{
     width:auto;
-    height:100%;
+    height:90%;
     position:absolute;
-    right:0;
-    left:0;
+    right:5%;
+    left:5%;
     top:0;
     bottom:0;
     margin:auto;
@@ -519,17 +516,14 @@
           background: transparent;
         }
 
-        .service-table td{
-            width:100%;
-            display:inline-block;
-        }
 
-        .service-table td .service-images{
-          left: 10%;
-          right: 10%;
-          width:auto;
-          height: 30vh;
-          cursor: pointer;
+
+        .content-container-services .service-table td{
+             height:32.8vh;
+             width:70%;
+             padding:0;
+             position:relative;
+             display:inline-block;
 
         }
 
