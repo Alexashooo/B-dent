@@ -325,6 +325,75 @@
     display:block;
 }
 
+
+
+.content-container-about {
+    position: relative;
+    width: 100%;
+    height:72vh;
+    background-color: #F0E6E2;
+    text-align: center;
+}
+
+.content-container-about .about-head {
+    width:100%;
+    height:22vh;
+    border:2px red solid;
+    margin:0;
+    padding:0;
+    position: relative;
+}
+
+.content-container-about .about-head .about-head-text {
+    position:absolute;
+    width:100%;
+    height:18vh;
+    border:2px orange solid;
+    margin:auto;
+    padding:0;
+    top:0;
+    bottom:0;
+}
+
+.content-container-about .about-image-box {
+    position:relative;
+    width:50%;
+    float:left;
+    height:50vh;
+    border:2px green solid;
+    margin:0;
+    padding:0;
+}
+
+.content-container-about .about-image-box .about-image {
+  left: 7.5%;
+  right: 7.5%;
+  width:85%;
+  height: auto;
+  min-width: 100px;
+  position:absolute;
+  padding:0;
+  top:0;
+  bottom:0;
+  margin:auto;
+}
+
+
+
+.content-container-about .about-description {
+    position:relative;
+    width:50%;
+    float:right;
+    height:50vh;
+    border:2px blue solid;
+    margin:0;
+    padding:0;
+}
+
+
+
+
+
 .service-description{
   position:fixed;
   left: 25vw;
