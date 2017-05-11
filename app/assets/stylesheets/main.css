@@ -487,7 +487,6 @@
             height: 20vh;
             line-height:70vh;
             min-width: 63px;
-            border:2px red solid;
             margin:0;
             padding: 0;
             text-align: center;
@@ -499,7 +498,6 @@
             height: 50vh;
             max-height: 600px;
             min-width: 63px;
-            border:2px red solid;
             margin:0;
             padding: 0;
         }
