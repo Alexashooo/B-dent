@@ -333,6 +333,7 @@
     height:72vh;
     background-color: #F0E6E2;
     text-align: center;
+    overflow-y: hidden;
 }
 
 .content-container-about .about-head {
@@ -346,14 +347,32 @@
 
 .content-container-about .about-head .about-head-text {
     position:absolute;
-    width:100%;
+    width:92.5%;
     height:18vh;
     border:2px orange solid;
     margin:auto;
     padding:0;
     top:0;
     bottom:0;
+    left:3.75%;
 }
+
+
+.content-container-about .about-head .about-head-text h1 {
+     font-family: Lora;
+     font-weight: bold;
+     color:#1C0903;
+     font-size: 60px;
+ }
+
+.content-container-about .about-head .about-head-text p {
+     font-family: Nunito;
+     font-style: normal;
+     font-weight: 800;
+     color:#1C0903;
+     font-size: 28px;
+ }
+
 
 .content-container-about .about-image-box {
     position:relative;
@@ -367,7 +386,6 @@
 
 .content-container-about .about-image-box .about-image {
   left: 7.5%;
-  right: 7.5%;
   width:85%;
   height: auto;
   min-width: 100px;
@@ -390,6 +408,38 @@
     padding:0;
 }
 
+.content-container-about .about-description .about-text {
+    left: 7.5%;
+    width:85%;
+    height: 85%;
+    position:absolute;
+    padding:0;
+    top:7.5%;
+    bottom:7.5%;
+    margin:0;
+    border:2px orange solid;
+    text-align: left;
+}
+
+.wrapword{
+      white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+      white-space: -pre-wrap;      /* Opera 4-6 */
+      white-space: -o-pre-wrap;    /* Opera 7 */
+      white-space: pre-wrap;       /* css-3 */
+      word-wrap: break-word;       /* Internet Explorer 5.5+ */
+      white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari*/
+      word-break: break-all;
+      white-space: normal;
+}
+
+.content-container-about .about-description .about-text a{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    color:#1C0903;
+    font-size: 14px;
+
+}
 
 
 
@@ -682,6 +732,105 @@
             width:35px;
 
         }
+
+        /* About section */
+        .content-container-about {
+
+            overflow-y: hidden;
+        }
+
+        .content-container-about .about-head {
+            width:100%;
+            height:15vh;
+            border:2px red solid;
+            margin:0;
+            padding:0;
+            position: relative;
+        }
+
+        .content-container-about .about-head .about-head-text {
+            position:absolute;
+            width:100%;
+            height:100%;
+            border:2px orange solid;
+            margin:auto;
+            padding:0;
+            top:0;
+            bottom:0;
+            left:0;
+            vertical-align: text-top;
+        }
+
+
+        .content-container-about .about-head .about-head-text h1 {
+             font-family: Lora;
+             font-weight: bold;
+             color:#1C0903;
+             font-size: 24px;
+         }
+
+        .content-container-about .about-head .about-head-text p {
+             font-family: Nunito;
+             font-style: normal;
+             font-weight: 800;
+             color:#1C0903;
+             font-size: 14px;
+         }
+
+
+        .content-container-about .about-image-box {
+            position:relative;
+            width:100%;
+            height:35vh;
+            border:2px green solid;
+            margin:0;
+            padding:0;
+        }
+
+        .content-container-about .about-image-box .about-image {
+            height:100%;
+            width: auto;
+            position:absolute;
+            padding:0;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            margin:auto;
+        }
+
+
+
+        .content-container-about .about-description {
+            position:relative;
+            width:100%;
+            border:2px blue solid;
+            margin:0;
+            padding:0;
+        }
+
+        .content-container-about .about-description .about-text {
+            width:100%;
+            left:0;
+            position:absolute;
+            padding:0;
+            top:7.5%;
+            bottom:7.5%;
+            margin:0;
+            border:2px orange solid;
+            text-align: left;
+
+        }
+
+        .content-container-about .about-description .about-text a{
+            font-family: Nunito;
+            font-style: normal;
+            font-weight: 800;
+            color:#1C0903;
+            font-size: 12px;
+
+        }
+
 
 
 
