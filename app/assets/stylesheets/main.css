@@ -11,22 +11,21 @@
 }
 
 .footer{
-  left:10%;
-  width:80%;
-  min-width: 320px;
+  width:100%;
   height:5vh;
   min-height: 40px;
   position: relative;
+  background-color: #26120E;
 }
 
 .footer-content{
-  width:100%;
+  width:90%;
+  left:5%;
   height: 100%;
   min-height: 40px;
-  background-color: #26120E;
   padding: 0;
   margin: 0;
-  top:0;
+  position:absolute;
 }
 
 
@@ -472,29 +471,68 @@
       display: none;
 }
 
-
-
-.content-container .google-map-placeholder{
-     height: 64vh;
-     width:50%;
-     border: 1px solid green;
-     left:0;
-     top:0;
-     position: relative;
-     float:left;
+.contact-section-container {
+   width: 100%;
+   height:80vh;
+   margin-top: 5vh;
+   background-color:#A2A2A4;
 }
 
-.content-container .contact-text {
-      height: 64vh;
+.content-container-contact {
+      position: relative;
+      width: 100%;
+      height:72vh;
+      background-color: #F0E6E2;
+      text-align: center;
+}
+
+
+.content-container-contact  .contact-description-container {
+      height: 100%;
       width:50%;
+      position: relative;
+      float:left;
+}
+
+
+.content-container-contact  .contact-description-container .contact-description{
+      height: 85%;
+      width:85%;
       border: 1px solid green;
-      right:0;
-      top:0;
+      left:7.5%;
+      top:7.5%;
+      position: absolute;
+}
+
+.content-container-contact  .contact-description-container .contact-description .contact-main{
+      width:100%;
+      height:40%;
+      border:2px green solid;
+
+}
+
+.content-container-contact  .contact-description-container .contact-description .contact-transport{
+      width:100%;
+      height:60%;
+      border:2px red solid;
+}
+
+
+
+.content-container-contact .google-map-container{
+      height: 100%;
+      width:50%;
       position: relative;
       float:right;
 }
 
-
+.content-container-contact .google-map-container .google-map-placeholder{
+      height: 85%;
+      width:85%;
+      left:7.5%;
+      top:7.5%;
+      position: absolute;
+}
 
 
 
