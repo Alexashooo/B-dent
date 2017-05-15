@@ -436,46 +436,71 @@
 }
 
 
-
 .service-descriptions-container{
-  position:fixed;
-  left: 20vw;
-  width: 60vw;
-  height:50vh;
-  top: 25vh;
-  transition: top 0.45s ease;
-  animation: fadein 1.2s;
-  z-index: -50;
-  background: #FFFFFF;
+    position:fixed;
+    left: 20vw;
+    width: 60vw;
+    height:50vh;
+    top: 25vh;
+    transition: top 0.45s ease;
+    animation: fadein 1.2s;
+    z-index: -50;
+    background: #FFFFFF;
 }
 
-.service-descriptions-container .service-description-nav-container{
+.service-descriptions-container .service-description-nav-top{
      height:7%;
      width:100%;
-     top:0;
-     position:absolute;
-     border:2px red solid;
+     position:relative;
+
 }
 
-.service-description-nav-container .close-button{
+.service-description-nav-top .close-button{
     position:absolute;
     right:0;
     height:100%;
-    font-size: 32px;
+    font-size: 30px;
     line-height: 100%;
     font-family: Nunito;
     font-style: normal;
     font-weight: 800;
     color:#1C0903;
+    cursor: pointer;
+    padding:2px;
+}
+
+.service-descriptions-container .service-description-nav-bottom{
+    height:7%;
+    left:5%;
+    width:90%;
+    bottom:0;
+    position:absolute;
+}
+
+.service-descriptions-container .service-description-nav-bottom .prices-button{
+    position:absolute;
+    right:0;
+    padding:5px;
+    text-align: center;
+    height:100%;
+    font-size: 14px;
+    line-height: 100%;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    color:#F0E6E2;
+    cursor: pointer;
+    background-color: #1D94A3;
+    white-space: nowrap;
 }
 
 .service-descriptions-container .description-content{
       width:90%;
-      height:88%;
-      background: #FFFFFF;
+      height:80%;
+      background: #C7BEBE;
       left:5%;
-      top:7%;
-      position: absolute;
+      margin-top: 2.5%;
+      position: relative;
       overflow-y: auto;
 }
 
@@ -483,7 +508,7 @@
       width:100%;
       height:100%;
       position: relative;
-
+      text-align: left;
 }
 
 
@@ -491,7 +516,6 @@
       height:30%;
       width:100%;
       position:relative;
-      border:2px orange solid;
 }
 
 .description-content .service-description-head-container img{
@@ -505,44 +529,51 @@
       height: 100%;
       position: relative;
       overflow: hidden;
-      border:2px red solid;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: 800;
+      color:#1C0903;
+      font-size: 14px;
+      padding: 10px;
 }
 
 
 
-.description-content .service-secription-list-conatiner{
+.description-content .service-description-list-container{
       height:23%;
       width:100%;
       position:relative;
-      border:2px green solid;
-
+      background-color: #FFFFFF;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: 800;
+      color:#1C0903;
+      font-size: 14px;
+      padding: 10px;
 }
 
 .description-content .service-description-text-container{
-      height:35%;
+      height:45%;
       width:100%;
       position:relative;
-      border:2px blue solid;
-
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: 800;
+      color:#1C0903;
+      font-size: 14px;
+      padding: 10px;
 }
 
-.description-content .service-description-price-container{
-      height:5%;
-      width:100%;
-      position:relative;
-      border:2px black solid;
-
-}
 
 .description-content .hide-text{
       display: none;
 }
 
 .contact-section-container {
-   width: 100%;
-   height:80vh;
-   margin-top: 5vh;
-   background-color:#A2A2A4;
+     width: 100%;
+     height:80vh;
+     margin-top: 5vh;
+     background-color:#A2A2A4;
 }
 
 .content-container-contact {
@@ -825,6 +856,62 @@
 
         }
 
+        .service-descriptions-container{
+            position:fixed;
+            left:5%;
+            width: 90%;
+            height:80vh;
+            top: 15vh;
+            transition: top 0.45s ease;
+            animation: fadein 1.2s;
+            z-index: -50;
+            background: #FFFFFF;
+        }
+
+         .service-description-nav-top{
+            height:3%;
+         }
+        .service-description-nav-top .close-button{
+            font-size: 28px;
+        }
+        .service-descriptions-container .description-content{
+              width:100%;
+              height:80%;
+              left:0;
+              margin-top: 0.5%;
+        }
+
+        .description-content .service-description-head-container{
+              height:38%;
+              font-family: Lora;
+              font-style: normal;
+              font-weight: 800;
+              color:#1C0903;
+              font-size: 12px;
+
+        }
+        .description-content .service-description-list-container{
+              height:15%;
+              font-family: Nunito;
+              font-style: normal;
+              font-weight: 800;
+              color:#1C0903;
+              font-size: 12px;
+        }
+        .description-content .service-description-text-container{
+              font-family: Nunito;
+              font-style: normal;
+              font-weight: 800;
+              color:#1C0903;
+              font-size: 12px;
+        }
+
+        .service-descriptions-container .service-description-nav-bottom{
+              height:7%;
+              width:100%;
+              left:0;
+        }
+
          .header{
             width:100%;
             left:0;
@@ -912,6 +999,10 @@
             height:12px;
             width:35px;
 
+        }
+
+        .section-head{
+            font-size: 18px;  
         }
 
         /* About section */
