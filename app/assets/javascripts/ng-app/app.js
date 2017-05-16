@@ -18,20 +18,41 @@
                 templateUrl: 'service_description.html',
                 controller: 'ServiceDescriptionCtrl as serviceDescription',
                 resolve: {
-                   preventLoadIf: preventLoadIf
+                   preventLoadDescription: preventLoadDescription
                 },
                 params: {
                    descriptionId: null
                 }
+            })
+
+            .state('landing.pricing', {
+                url:'pricing',
+                templateUrl: 'prices.html',
+                controller: 'PricingCtrl as pricing',
+                resolve: {
+                   preventLoadPrices: preventLoadPrices
+                },
+                params: {
+                   load: false
+                }
             });
 
 
-            function preventLoadIf($q, $stateParams) {
+
+            function preventLoadDescription($q, $stateParams) {
                   if($stateParams.descriptionId!=null){
                      return $q.when()
                   } else {
                     return $q.reject()
                   }
+             };
+
+             function preventLoadPrices($q, $stateParams){
+                   if($stateParams.load){
+                      return $q.when()
+                   } else {
+                     return $q.reject()
+                   }
              };
 
 
