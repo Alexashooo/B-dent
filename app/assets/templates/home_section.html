@@ -1,11 +1,12 @@
 <section class="section-container" id = 'section1' section-animation>
-    <div class = 'content-container-home '>
+    <div class = 'content-container-home'
+         ng-style="{'background-image': 'url(' + imagesHome.bkg + ')'}">
        <div class ="moto-container" >
             <div class ='moto-text-container'>
                 <h2>"Jedan iskren osmeh je dovoljan!"</h2>
                 <p>Stomatološka ordinacija B-Dent</p>
             </div>
       </div>
-      <div class='image-home-container'><img  ng-src= '{{imagesHome.main}}' alt="homepage-img"></div>
-    </div>
+      <!--<div class='image-home-container'><img  ng-src= '{{imagesHome.bkg}}' alt="homepage-img"></div>
+    </div>-->
 </section>

@@ -15,7 +15,7 @@
   height:5vh;
   min-height: 40px;
   position: relative;
-  background-color: #26120E;
+  background-color: #254D46;
 }
 
 .footer-content{
@@ -42,7 +42,7 @@
    width:100%;
    height: 100%;
    min-height: 85px;
-   background-color: #26120E;
+   background-color: white;
    position: fixed;
    padding: 0;
    margin: 0;
@@ -54,7 +54,7 @@
 
 .logo {
   display: inline-block;
-  height:80%;
+  height:120%;
   min-height: 30px;
   width: auto;
   margin:1px;
@@ -82,7 +82,7 @@
 
 .language-button{
    margin-right:calc(5px + 0.6vw);
-   color: #F0E7E2;
+   color: #254D46;
    font-size:12px;
    cursor: pointer;
 }
@@ -95,12 +95,19 @@
 .nav-button {
    display: inline-block;
    width:calc(30px + 4.5vw);
-   border: 1px solid  #F0E7E2;
+   border: 1px solid  #254D46;
    border-radius: 6px;
    margin-left: 0.5vw;
    margin-right:0.5vw;
    cursor: pointer;
+}
 
+.nav-button:hover {
+  background-color: #254D46;
+}
+
+.nav-button .button-text-container:hover {
+  color: white;
 }
 
 .nav-button .button-image-container {
@@ -127,7 +134,7 @@
    font-style: normal;
    font-size:calc(8px + 0.3vw);
    font-weight: 800;
-   color: #F0E7E2;
+   color: #254D46;
    position: relative;
 }
 
@@ -156,18 +163,15 @@
     position: relative;
     width: 100%;
     height:80vh;
-    background: #FAD795;
-    background: linear-gradient( to right,#FAD795, #F2C46C);
-    background: -webkit-linear-gradient(to right,#FAD795, #F2C46C);
-    background: -o-linear-gradient(to right,#FAD795, #F2C46C);
-    background: -moz-linear-gradient(to right,#FAD795, #F2C46C);
+    background-size:  cover;
+    background-repeat: no-repeat;
 }
 
 .content-container-home .moto-container{
     position:relative;
     top:5vh;
     float:left;
-    width:50%;
+    width:60%;
     height: 70vh;
     min-width: 63px;
     margin:0;
@@ -188,8 +192,9 @@
     line-height: 100%;
     font-weight: 800;
     font-family: Nunito;
-    color:#26120E;
+    color: white;
     font-size: 28px;
+    padding: 20px;
 }
 
 
@@ -240,18 +245,18 @@
     font-weight: 800;
     font-family: Nunito;
     background-color: white;
-    color:#26120E;
+    color:#254D46;
     font-size: 28px;
     line-height: 8vh;
     padding-left: 5%;
-    border-top: 2px #26120E solid;
+    border-top: 2px #254D46 solid;
 }
 
 .content-container-services {
     position: relative;
     width: 100%;
     height:72vh;
-    background-color: #F0E6E2;
+    background-color: white;
     text-align: center;
 }
 
@@ -334,24 +339,24 @@
     position: relative;
     width: 100%;
     height:72vh;
-    background-color: #F0E6E2;
+    background-color: white;
     text-align: center;
     overflow-y: hidden;
 }
 
 .content-container-about .about-head {
     width:100%;
-    height:22vh;
+    height:30vh;
     margin:0;
     padding:0;
     position: relative;
 }
 
 .content-container-about .about-head .about-head-text {
-    position:absolute;
+    position: absolute;
     width:92.5%;
-    height:18vh;
-    margin:auto;
+    height:100%;
+    margin:0;
     padding:0;
     top:0;
     bottom:0;
@@ -362,16 +367,18 @@
 .content-container-about .about-head .about-head-text h1 {
      font-family: Lora;
      font-weight: bold;
-     color:#1C0903;
+     color:#254D46;
      font-size: 60px;
+     margin: 0;
  }
 
 .content-container-about .about-head .about-head-text p {
      font-family: Nunito;
      font-style: normal;
      font-weight: 800;
-     color:#1C0903;
+     color:#254D46;
      font-size: 28px;
+     margin: 5px 0 0 0;
  }
 
 
@@ -379,7 +386,7 @@
     position:relative;
     width:50%;
     float:left;
-    height:50vh;
+    height:45vh;
     margin:0;
     padding:0;
 }
@@ -402,7 +409,7 @@
     position:relative;
     width:50%;
     float:right;
-    height:50vh;
+    height:45vh;
     margin:0;
     padding:0;
 }
@@ -430,11 +437,11 @@
       white-space: normal;
 }
 
-.content-container-about .about-description .about-text a{
+.content-container-about .about-description .about-text p{
     font-family: Nunito;
     font-style: normal;
-    font-weight: 800;
-    color:#1C0903;
+    font-weight: 600;
+    color:#254D46;
     font-size: 14px;
 
 }
@@ -450,6 +457,7 @@
     animation: fadein 1.2s;
     z-index: -50;
     background: #FFFFFF;
+    border: 2px #1F3330 solid;
 }
 
 .service-descriptions-container .service-description-nav-top{
@@ -463,11 +471,11 @@
     position:absolute;
     right:0;
     height:100%;
-    font-size: 30px;
+    font-size: 22px;
     line-height: 100%;
     font-family: Nunito;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 600;
     color:#1C0903;
     cursor: pointer;
     padding:2px;
@@ -491,21 +499,26 @@
     line-height: 100%;
     font-family: Nunito;
     font-style: normal;
-    font-weight: 800;
-    color:#F0E6E2;
+    font-weight: 600;
+    color: white;
     cursor: pointer;
-    background-color: #1D94A3;
+    background-color: #254D46;
     white-space: nowrap;
+}
+
+.service-descriptions-container .service-description-nav-bottom .prices-button:hover {
+  background-color: #D4717C;
+  color: #121A18;
 }
 
 .service-descriptions-container .description-content{
       width:90%;
       height:80%;
-      background: #C7BEBE;
+      background: white;
       left:5%;
       margin-top: 2.5%;
       position: relative;
-      overflow-y: auto;
+      overflow-y: scroll;
 }
 
 .service-descriptions-container .description-content .service-description{
@@ -517,40 +530,51 @@
 
 
 .description-content .service-description-head-container{
-      height:30%;
+      height:auto;
       width:100%;
       position:relative;
 }
 
 .description-content .service-description-head-container img{
+      width: 100%;
       height: 100%;
       width:auto;
       position: relative;
       float:left;
+      margin-right: 20px;
 }
 
 .description-content .service-description-head-container .service-description-head-text{
       height: 100%;
       position: relative;
-      overflow: hidden;
+      overflow-y: hidden;
       font-family: Nunito;
       font-style: normal;
-      font-weight: 800;
+      font-weight: 600;
       color:#1C0903;
       font-size: 14px;
-      padding: 10px;
+}
+.description-content .service-description-head-container .service-description-head-text p{
+  font-family:Lora;
+  font-size: 18px;
+  color: #254D46;
+}
+
+.description-content span {
+  font-family: Lora;
+  color: #254D46;
 }
 
 
 
 .description-content .service-description-list-container{
-      height:23%;
+      /*height:100%;*/
       width:100%;
-      position:relative;
+      /*position:relative;*/
       background-color: #FFFFFF;
       font-family: Nunito;
       font-style: normal;
-      font-weight: 800;
+      font-weight: 600;
       color:#1C0903;
       font-size: 14px;
       padding: 10px;
@@ -562,10 +586,11 @@
       position:relative;
       font-family: Nunito;
       font-style: normal;
-      font-weight: 800;
+      font-weight: 600;
       color:#1C0903;
       font-size: 14px;
       padding: 10px;
+      margin-bottom: 10px;
 }
 
 
@@ -584,7 +609,7 @@
       position: relative;
       width: 100%;
       height:72vh;
-      background-color: #F0E6E2;
+      background-color: #254D46;
       text-align: center;
 }
 
@@ -611,8 +636,12 @@
       text-align: left;
       position: relative;
       font-family:Lora;
-      color:#26120E;
-      font-size:16px;
+      color: white;
+      font-size:14px;
+}
+
+.content-container-contact  .contact-description-container .contact-description .contact-main a{
+      color: white;
 }
 
 .content-container-contact  .contact-description-container .contact-description .contact-main .phone-mail {
@@ -634,14 +663,14 @@
       text-align: left;
       position: relative;
       font-family:Lora;
-      color:#26120E;
-      font-size:18px;
+      color: white;
+      font-size:14px;
 }
 
 .contact-description .contact-transport img{
       height:100%;
       width:auto;
-      margin-right: 10%;
+      margin-right: 5%;
       display: inline-block;
       position: relative;
 }
@@ -660,7 +689,7 @@
       display:inline-block;
       font-family: Lora;
       font-weight: bold;
-      color:#1D94A3;
+      color: white;
       font-size: 28px;
 }
 
@@ -678,7 +707,7 @@
       display:inline-block;
       font-family: Lora;
       font-weight: bold;
-      color:#1D94A3;
+      color: white;
       font-size: 28px;
 
 }
@@ -696,7 +725,7 @@
       display:inline-block;
       font-family: Lora;
       font-weight: bold;
-      color:#1D94A3;
+      color: white;
       font-size: 28px;
 }
 
@@ -830,7 +859,9 @@
             position: relative;
             width: 100%;
             height:80vh;
-            background: linear-gradient(#FAD795, #F2C46C);
+            background-size:  cover;
+            background-repeat: no-repeat;
+            background-position: right;
 
         }
 
@@ -922,17 +953,17 @@
 
         }
         .description-content .service-description-list-container{
-              height:15%;
+              height:auto;
               font-family: Nunito;
               font-style: normal;
-              font-weight: 800;
+              font-weight: 600;
               color:#1C0903;
               font-size: 12px;
         }
         .description-content .service-description-text-container{
               font-family: Nunito;
               font-style: normal;
-              font-weight: 800;
+              font-weight: 600;
               color:#1C0903;
               font-size: 12px;
         }
@@ -1043,7 +1074,7 @@
 
         .content-container-about .about-head {
             width:100%;
-            height:10vh;
+            height:15vh;
             margin:0;
             padding:0;
             position: relative;
@@ -1052,7 +1083,7 @@
         .content-container-about .about-head .about-head-text {
             position:absolute;
             width:100%;
-            height:100%;
+            height:auto;
             margin:auto;
             padding:0;
             vertical-align: middle;
@@ -1063,8 +1094,8 @@
         .content-container-about .about-head .about-head-text h1 {
              font-family: Lora;
              font-weight: bold;
-             color:#1C0903;
-             font-size: 22px;
+             color:#254D46;
+             font-size: 18px;
              margin:0;
              padding:0;
              top:0;
@@ -1074,8 +1105,8 @@
         .content-container-about .about-head .about-head-text p {
              font-family: Nunito;
              font-style: normal;
-             font-weight: 800;
-             color:#1C0903;
+             font-weight: 600;
+             color:#254D46;
              font-size: 14px;
          }
 
@@ -1121,10 +1152,10 @@
 
         }
 
-        .content-container-about .about-description .about-text a{
+        .content-container-about .about-description .about-text p{
             font-family: Nunito;
             font-style: normal;
-            font-weight: 800;
+            font-weight: 600;
             color:#1C0903;
             font-size: 14px;
 
@@ -1154,7 +1185,7 @@
               text-align: left;
               position: relative;
               font-family:Nunito;
-              color:#26120E;
+              color: white;
               font-size:14px;
         }
 
@@ -1163,6 +1194,8 @@
               height:100%;
               float:left;
               position: relative;
+              margin-left: 10px;
+              display: inline-block;
 
         }
         .content-container-contact  .contact-description-container .contact-description .contact-main .address {
@@ -1170,35 +1203,28 @@
               height:100%;
               float: right;
               position: relative;
+              display: inline-block;
         }
-
-        .content-container-contact  .contact-description-container .contact-description .contact-main h3{
-              font-size:16px;
-        }
-
 
         .content-container-contact  .contact-description-container .contact-description .contact-transport{
               width:100%;
               height:40%;
               text-align: left;
               position: relative;
-              font-family:Nunito;
-              color:#26120E;
+              font-family: Nunito;
+              color:white;
               font-size:14px;
+              margin-left: 10px;
         }
 
         .contact-description .contact-transport img{
               height:100%;
               width:auto;
-              margin-right: 10%;
+              margin-right: 5%;
               display: inline-block;
               position: relative;
               margin-top: 0;
               margin-bottom: 0;
-        }
-
-        .contact-description .contact-transport  h3{
-              font-size:16px;
         }
 
 
@@ -1216,7 +1242,7 @@
               display:inline-block;
               font-family: Nunito;
               font-weight: bold;
-              color:#1D94A3;
+              color:white;
               font-size: 18px;
         }
 
@@ -1234,7 +1260,7 @@
               display:inline-block;
               font-family: Nunito;
               font-weight: bold;
-              color:#1D94A3;
+              color:white;
               font-size: 18px;
 
         }
@@ -1252,7 +1278,7 @@
               display:inline-block;
               font-family: Nunito;
               font-weight: bold;
-              color:#1D94A3;
+              color:white;
               font-size: 18px;
         }
 
@@ -1266,7 +1292,7 @@
               height:80%;
               width:80%;
               position: absolute;
-              top:10%;
+              top:25%;
               left:10%;
         }
 

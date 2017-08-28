@@ -8,7 +8,9 @@
           scope: {},
           link: function(scope, element, attrs){
 
-          scope.imagesHome = ImageSharing.home.desk;
+          //scope.imagesHome = ImageSharing.home.desk;
+
+          ImageSharing.toggleDeskMob.call(scope, 960, 'imagesHome', 'home');
 
           var imageContainer = $('.image-home-container');
           var img = element.find('img');
