@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/Alexashooo/B-dent/issues"
   },
-  "homepage": "https://github.com/Alexashooo/B-dent#readme"
+  "homepage": "https://github.com/Alexashooo/B-dent#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^3.0.0"
+  }
 }

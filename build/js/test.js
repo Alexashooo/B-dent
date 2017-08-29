@@ -1,0 +1,1 @@
+!function(){angular.module("bDent").directive("aboutSection",["ImageSharing",function(t){return{templateUrl:"about_section.html",replace:!0,restrict:"E",scope:{},link:function(e,n,i){e.imagesAbout=t.about}}}])}();
