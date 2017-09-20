@@ -346,7 +346,7 @@
 
 .content-container-about .about-head {
     width:100%;
-    height:30vh;
+    height:18vh;
     margin:0;
     padding:0;
     position: relative;
@@ -443,7 +443,8 @@
     font-weight: 600;
     color:#254D46;
     font-size: 14px;
-
+    hyphens: none;
+    word-break: keep-all;
 }
 
 
@@ -457,7 +458,6 @@
     animation: fadein 1.2s;
     z-index: -50;
     background: #FFFFFF;
-    border: 2px #1F3330 solid;
 }
 
 .service-descriptions-container .service-description-nav-top{
@@ -508,6 +508,11 @@
 
 .service-descriptions-container .service-description-nav-bottom .prices-button:hover {
   background-color: #D4717C;
+  color: #121A18;
+}
+
+.service-descriptions-container .service-description-nav-bottom .prices-button:active {
+  background-color:red;
   color: #121A18;
 }
 
@@ -635,27 +640,31 @@
       height:40%;
       text-align: left;
       position: relative;
-      font-family:Lora;
+      font-family: Nunito;
       color: white;
       font-size:14px;
 }
 
-.content-container-contact  .contact-description-container .contact-description .contact-main a{
+.content-container-contact  .contact-description-container .contact-description .contact-main .phone-email {
+      width:100%;
+      height:50%;
+      position: relative;
+      margin-bottom: 16px;
+}
+
+.content-container-contact  .contact-description-container .contact-description .contact-main .phone-email a{
+      display: block;
+      font-family: Lora;
+      font-size: 18px;
+      font-weight: bold;
       color: white;
-}
+  }
 
-.content-container-contact  .contact-description-container .contact-description .contact-main .phone-mail {
-      width:100%;
-      height:50%;
-      position: relative;
-
+.content-container-contact  .contact-description-container .contact-description .contact-main .address span{
+      font-family: Lora;
+      font-size: 18px;
+      font-weight: bold;
 }
-.content-container-contact  .contact-description-container .contact-description .contact-main .address {
-      width:100%;
-      height:50%;
-      position: relative;
-}
-
 
 .content-container-contact  .contact-description-container .contact-description .contact-transport{
       width:100%;
@@ -757,7 +766,6 @@
       animation: fadein 1.2s;
       z-index: -100;
       background: #FFFFFF;
-      border: 2px black solid;
       text-align: center;
 }
 
@@ -1074,7 +1082,7 @@
 
         .content-container-about .about-head {
             width:100%;
-            height:15vh;
+            height:12vh;
             margin:0;
             padding:0;
             position: relative;
@@ -1108,13 +1116,14 @@
              font-weight: 600;
              color:#254D46;
              font-size: 14px;
+             hyphens: none;
          }
 
 
         .content-container-about .about-image-box {
             position:relative;
             width:100%;
-            height:35vh;
+            height:30vh;
             margin:0;
             padding:0;
         }
@@ -1158,21 +1167,24 @@
             font-weight: 600;
             color:#1C0903;
             font-size: 14px;
-
+            hyphens: none;
+            word-break: keep-all;
         }
 
 
        /*contact section */
 
         .content-container-contact  .contact-description-container {
-              height:30vh;
+              height:28vh;
               width:100%;
               position: relative;
+              margin: 0;
+              padding: 0;
         }
 
 
         .content-container-contact  .contact-description-container .contact-description{
-              height: 100%;
+              height: auto;
               width:100%;
               top:7.5%;
               position: absolute;
@@ -1181,7 +1193,7 @@
 
         .content-container-contact  .contact-description-container .contact-description .contact-main {
               width:100%;
-              height:60%;
+              height:50%;
               text-align: left;
               position: relative;
               font-family:Nunito;
@@ -1190,45 +1202,68 @@
         }
 
         .content-container-contact  .contact-description-container .contact-description .contact-main .phone-email {
-              width:50%;
+              width:100%;
               height:100%;
-              float:left;
               position: relative;
-              margin-left: 10px;
-              display: inline-block;
-
+              display: block;
+              text-align: center;
         }
-        .content-container-contact  .contact-description-container .contact-description .contact-main .address {
-              width:50%;
-              height:100%;
-              float: right;
-              position: relative;
+
+        .content-container-contact  .contact-description-container .contact-description .contact-main .phone-email a{
+              font-size: 18px;
               display: inline-block;
+              border: 1px solid white;
+              border-radius: 5px;
+              padding: 6px;
+              box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+
+        .content-container-contact  .contact-description-container .contact-description .contact-main .address {
+              width:100%;
+              height:100%;
+              text-align: center;
+              position: relative;
+              display: block;
+              margin-top: 12px;
         }
 
         .content-container-contact  .contact-description-container .contact-description .contact-transport{
               width:100%;
-              height:40%;
+              height:100%;
               text-align: left;
               position: relative;
               font-family: Nunito;
-              color:white;
+              color: white;
               font-size:14px;
               margin-left: 10px;
         }
 
+        .content-container-contact  .contact-description-container .contact-description .contact-transport .bus {
+              left: 0;
+              right: 0;
+              margin: auto;
+              display: block;
+              width: 55%;
+              padding-bottom: 4px;
+        }
+
+        .content-container-contact  .contact-description-container .contact-description .contact-transport .tram {
+              left: 0;
+              right: 0;
+              margin: auto;
+              display: block;
+              width: 55%;
+        }
+
         .contact-description .contact-transport img{
-              height:100%;
-              width:auto;
-              margin-right: 5%;
-              display: inline-block;
+              height:20%;
+              width:20%;
+              margin: 0;
               position: relative;
-              margin-top: 0;
-              margin-bottom: 0;
         }
 
 
-        .contact-transport .trolleybus{
+        /*.contact-transport .trolleybus{
               width:35%;
               height:35%;
               display:inline-block;
@@ -1244,21 +1279,21 @@
               font-weight: bold;
               color:white;
               font-size: 18px;
-        }
+        }*/
 
 
         .contact-transport .bus{
-              width:30%;
-              height:35%;
+              width:auto;
+              height:50%;
               margin:0;
-              display:inline-block;
+              display: block;
               position:relative;
         }
 
         .contact-transport .bus .bus-lines{
               position: relative;
-              display:inline-block;
-              font-family: Nunito;
+              display: inline-block;
+              font-family: Lora;
               font-weight: bold;
               color:white;
               font-size: 18px;
@@ -1266,26 +1301,28 @@
         }
 
         .contact-transport .tram{
-              width:30%;
-              height:35%;
+              width:auto;
+              height:50%;
               margin:0;
-              display:inline-block;
+              display:block;
               position:relative;
         }
 
         .contact-transport .tram .tram-lines{
               position: relative;
               display:inline-block;
-              font-family: Nunito;
+              font-family: Lora;
               font-weight: bold;
               color:white;
               font-size: 18px;
         }
 
         .content-container-contact .google-map-container{
-              height:42vh;
+              height:40vh;
               width:100%;
-              position: relative
+              position: relative;
+              padding: 0;
+              margin: 0;
         }
 
         .content-container-contact .google-map-container .google-map-placeholder{
