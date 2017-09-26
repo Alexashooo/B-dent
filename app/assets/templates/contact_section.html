@@ -5,40 +5,37 @@
           <div class = 'contact-description'>
                <div class='contact-main'>
                     <div class='phone-email'>
-                        <h3>Kontaktirajte nas</h3>
-                        <p>b-dent@gmail.com</p>
-                        <p>+381 888 88888</p>
+                        <!--<p>Kontaktirajte nas putem <a href="mailto:bdent@example.com?Subject=Emailing:%kontakt%sa%websajta" target="_top">emaila</a>
+                        <br>b-dent@gmail.com-->
+                        <!-- Pozovite nas na: -->
+                        <br><a href="tel:+381 11 323181">011/ 323 181</a>
+                        <a href="tel:+381 64 1222326">064/ 1222 326</a>
                     </div>
                     <div class="address">
-                        <h3>Svratite do nas</h3>
-                        <p>Koce Kapetana 11000, Beograd</p>
+                        <!-- <p>Posetite nas na adresi:<br> -->
+                        <span>Ulica 27. marta, 29</span></p>
                     </div>
 
                 </div>
                <div class='contact-transport'>
-                        <h3>Ako koristite odrzivi transport</h3>
-                        <div class="trolleybus">
-                            <img ng-src='{{imagesContact.trolley}}'>
-                            <div class="trolley-lines">40, 41, 42</div>
-                        </div>
                         <div class="bus">
                             <img ng-src='{{imagesContact.bus}}'>
-                            <div class="bus-lines">23, 37</div>
+                            <div class="bus-lines">33, 48, 65, 77, 79</div>
                         </div>
                         <div class="tram">
                             <img ng-src='{{imagesContact.tram}}'>
-                            <div class="tram-lines">11, 13</div>
+                            <div class="tram-lines">2, 5, 10</div>
                         </div>
                </div>
           </div>
        </div>
        <div class="google-map-container">
            <div class = 'google-map-placeholder'>
-                 <ng-map class = 'map' zoom="11" center="[40.74, -74.18]" >
-                     <marker position="[40.74, -74.18]" />
-                     <shape name="circle" radius="400" center="[40.74,-74.18]" radius="4000" />
-                     <control name="overviewMap" opened="true" />
-                 </ng-map>
+             <ng-map class = 'map' zoom="15" center="[44.8109256,20.4744202]" >
+                 <marker position="[44.8109256,20.4744202]" />
+                 <shape name="circle" radius="0" center="[44.8109256,20.4744202]" />
+                 <control name="overviewMap" opened="true" />
+              </ng-map>
             </div>
        </div>
     </div>
