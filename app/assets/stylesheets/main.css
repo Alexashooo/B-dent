@@ -270,8 +270,8 @@
      width:16vw;
      padding:0;
      position:relative;
-
 }
+
 
 .content-container-services .service-table td .service-box{
     width:100%;
@@ -279,7 +279,6 @@
     margin:auto;
     top:0;
     bottom:0;
-
 }
 
 .content-container-services .service-table td .service-box .text-box{
@@ -756,7 +755,7 @@
 }
 
 
-.prices-container{
+.prices{
       position:fixed;
       left: 20vw;
       width: 60vw;
@@ -770,7 +769,37 @@
 }
 
 .prices-nav-top{
+    position:relative;
+    width: 100%;
+    margin-bottom: 10px;
+    height:5%;
+}
 
+.pricing-table-container{
+    position: relative;
+    height:92%;
+    width:100%;
+    overflow-x: hidden;
+}
+
+.pricing-table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.hide-pricing-table{
+    display: none;
+}
+
+.pricing-table#td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.pricing-table#tr:nth-child(even) {
+    background-color: #dddddd;
 }
 
 

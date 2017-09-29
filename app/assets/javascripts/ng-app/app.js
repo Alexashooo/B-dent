@@ -33,7 +33,8 @@
                    preventLoadPrices: preventLoadPrices
                 },
                 params: {
-                   load: false
+                   load: false,
+                   section: null
                 }
             });
 

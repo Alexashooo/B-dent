@@ -1,17 +1,20 @@
 (function(){
-   function PricingCtrl($scope, $state){
+   function PricingCtrl($scope, $state, $stateParams){
 
        $scope.$watch(function(){
-                  return $('.prices-table').attr('showPrices')
+                  return $('.prices').attr('showPrices')
               },
 
-              function(load){
-                 if(load){
-                      $('.prices-container').css('z-index', 100);
-                      console.log($('.prices-container').css('z-index'));
-                 }
-              }
+              function() {
+                      var showPricesSection = $stateParams.section;
+                      $('.prices').css('z-index', 100);
 
+                      $('.pricing-table-container').children().each(function(){
+                            if($(this).attr('class') != showPricesSection && showPricesSection !=null){
+                                $(this).addClass('hide-pricing-table');
+                            }
+                      });
+              }
         );
 
        $scope.goToLanding = function(){
@@ -21,5 +24,5 @@
 
    angular
      .module('bDent')
-     .controller('PricingCtrl', ['$scope','$state',  PricingCtrl]);
+     .controller('PricingCtrl', ['$scope','$state', '$stateParams', PricingCtrl]);
 })();

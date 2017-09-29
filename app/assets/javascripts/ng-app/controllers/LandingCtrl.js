@@ -1,9 +1,6 @@
 (function(){
     function LandingCtrl($scope, $rootScope, $state, $location, $anchorScroll){
 
-      $rootScope.$watch(function(){
-                console.log("Angular started to digest the code");
-      });
 
       window.onbeforeunload = function () {
           window.scrollTo(0, 0);
