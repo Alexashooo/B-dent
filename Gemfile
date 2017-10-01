@@ -52,6 +52,8 @@ gem 'rack-cors', :require => 'rack/cors'
 
 gem 'rails_12factor', group: :production
 
+gem 'unicron', group: :production
+
 
 source "https://rails-assets.org" do
   gem 'rails-assets-bootstrap'
