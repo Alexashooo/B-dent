@@ -10,6 +10,7 @@
 
 
       $scope.scrollTo = function(id) {
+          $state.go('landing');
           var old = $location.hash();
           $location.hash(id);
           $anchorScroll.yOffset=parseInt(window.innerHeight*0.15);

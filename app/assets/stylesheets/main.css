@@ -783,20 +783,39 @@
 }
 
 .pricing-table {
-    font-family: arial, sans-serif;
+    font-family: Nunito;
     border-collapse: collapse;
     width: 100%;
+    margin-bottom: 50px;
+}
+
+.pricing-table tr {
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+.pricing-table tr:nth-child(odd){
+    background-color: #254D46;
+    color:white;
+}
+
+.pricing-table tr:hover {
+    background-color: #ddd;
+}
+
+.pricing-table-container h3 {
+    font-family: Lora;
+    font-size: 22px;
+    color: #254D46;
+    text-align: left;
+    border: 0;
+    font-weight: 600;
 }
 
 .hide-pricing-table{
     display: none;
 }
 
-.pricing-table#td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
 
 .pricing-table#tr:nth-child(even) {
     background-color: #dddddd;
@@ -1009,6 +1028,12 @@
               height:7%;
               width:100%;
               left:0;
+        }
+
+        .prices{
+              width: 90%;
+              left:3.5%;
+              height: 60vh;
         }
 
          .header{
@@ -1290,26 +1315,6 @@
               margin: 0;
               position: relative;
         }
-
-
-        /*.contact-transport .trolleybus{
-              width:35%;
-              height:35%;
-              display:inline-block;
-              position:relative;
-              margin:0;
-
-        }
-
-        .contact-transport .trolleybus .trolley-lines{
-              position: relative;
-              display:inline-block;
-              font-family: Nunito;
-              font-weight: bold;
-              color:white;
-              font-size: 18px;
-        }*/
-
 
         .contact-transport .bus{
               width:auto;
