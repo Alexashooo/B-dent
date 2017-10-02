@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="90435715-914b-43ed-aa48-399655337a7f" name="bdent" url="http://207.154.199.82">
-        <fileTransfer host="207.154.199.82" port="22" rootFolder="/root" accessType="SFTP">
+      <webServer id="90435715-914b-43ed-aa48-399655337a7f" name="bdent" url="http://46.101.143.32">
+        <fileTransfer host="46.101.143.32" port="22" rootFolder="/home/rails" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
