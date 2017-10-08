@@ -542,7 +542,7 @@
 }*/
 
 .description-content .service-description-head-container img{
-      width: auto;
+      width: initial;
       height:50%;
       position: relative;
       float:left;
@@ -1019,6 +1019,7 @@
 
         .description-content .service-description-head-container img{
           width: 50%;
+          height:initial;
           float: left;
           position: relative;
           clear: left;
