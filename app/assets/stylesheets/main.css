@@ -542,8 +542,8 @@
 }*/
 
 .description-content .service-description-head-container img{
-      height: 100%;
-      width:auto;
+      width: auto;
+      height:50%;
       position: relative;
       float:left;
       margin-right: 20px;
