@@ -1331,7 +1331,7 @@
 
         .contact-transport .bus{
               width:auto;
-              height:50%;
+              height:30%;
               margin:0;
               display: block;
               position:relative;
@@ -1349,7 +1349,7 @@
 
         .contact-transport .tram{
               width:auto;
-              height:50%;
+              height:30%;
               margin:0;
               display:block;
               position:relative;
