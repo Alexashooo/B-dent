@@ -1306,11 +1306,12 @@
         }
 
         .content-container-contact  .contact-description-container .contact-description .contact-transport .bus {
+              padding-top:10px;
               left: 0;
               right: 0;
               margin: auto;
               display: block;
-              width: 55%;
+              width: 35%;
               padding-bottom: 4px;
         }
 
@@ -1319,7 +1320,7 @@
               right: 0;
               margin: auto;
               display: block;
-              width: 55%;
+              width: 35%;
         }
 
         .contact-description .contact-transport img{
