@@ -1375,7 +1375,7 @@
         .content-container-contact .google-map-container .google-map-placeholder{
               height:80%;
               width:80%;
-              position: absolute;
+              position: relative;
               top:25%;
               left:10%;
         }
