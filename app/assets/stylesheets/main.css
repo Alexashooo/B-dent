@@ -745,8 +745,7 @@
 
 
 .content-container-contact .google-map-container{
-      margin-top: 20px;
-      height: 90%;
+      height: 100%;
       width:50%;
       position: relative;
       float:right;
@@ -1255,7 +1254,7 @@
               height: auto;
               width:100%;
               top:7.5%;
-              position: absolute;
+              position: relative;
               left:0;
         }
 
